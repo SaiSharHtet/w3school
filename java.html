@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function change(SW) {
+        let pic="image/coffee.jpg"
+        let pic1="image/forex.jpg"
+
+        if (SW==0){
+            document.getElementById("ime").src=pic
+        }else{
+            document.getElementById("ime").src=pic1
+        }
+    }
+    function Myfunction(Even){
+        if(Even==0){
+                        document.getElementById("ee").style.display="none";
+        }else{
+            document.getElementById("ee").style.display="block"
+        }
+
+    }
+</script>
+
+<body style="margin: 0;">
+    <h1>This is My first Java script </h1>
+    <p>Here the Java script can change the value of image.</p>
+
+
+
+
+
+
+
+
+    <img src="image/Forex.jpg" alt="" id="ime" style="width: 40%; height: 300px;"><br>
+   <div style="border-bottom: 2px solid gray; margin:5px">
+    <button type="button" onclick="change(1)">Change</button>
+    <button type="button" onclick="change(0)">Return To home</button>
+   </div>
+    <img src="delicious-array-fresh-fruit-juices-260nw-192709250.webp" alt="food" id="ee" style="border: 5px solid red; 
+     width: 50%;">
+     <button style="width: 100%;
+     color: white;
+     background-color: black;"
+     onclick="Myfunction(1)">
+         Click Me
+     </button>
+     <button type="button  " onclick="Myfunction(0)">Click Again</button>
+</body>
+</html>
